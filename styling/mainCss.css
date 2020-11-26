@@ -11,12 +11,7 @@
   .catBtns{
     margin : 10px;
   }
-  .bgimg {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(10%);
-  height: 20vw;
-  padding:30px;
-  }
+
   /* Container holding the image and the text */
 .containerBG {
   position: relative;

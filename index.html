@@ -21,6 +21,7 @@
         <style type="text/css">
             .bgimg {
                 background-image: url('img/header.jpg');
+                background-repeat: no-repeat;
             }
         </style>
         <div class="centeredHeaderText">Centered</div>
@@ -94,7 +95,20 @@
                     <button class="btns filterBtn ">Delivery</button>
                 </span>
             </div>
-            <div class="btn-group col " >
+            <div class="col-sm-3 pd-l-0">
+                <div class="form-group df-ja">
+                    <label class="df-14 sort-label">Soort</label>
+                    <select class="select-css select-org-drop list_sort df-14">
+                        <option value="distance">Afstand</option>
+                        <option value="alphabet">Alfabetisch</option>
+                        <option value="rating">Beoordeling</option>
+                        <option value="cost_l_h">Kosten (laag tot hoog)</option>
+                        <option value="cost_h_l">Kosten (hoog naar laag)</option>
+                        <option value="offer">Aanbiedingen</option>
+                    </select>
+                </div>
+            </div>
+            <!-- <div class="btn-group col " >
                 <button type="button" style="border-color:#000; background-color: #FFF; color :#000"class="btn btn-primary">Action</button>
                 <button type="button" style="border-color:#000;background-color: #FFF; color :#000" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="sr-only">Toggle Dropdown</span>
@@ -106,7 +120,7 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Separated link</a>
                 </div>
-              </div>
+              </div> -->
         </div>
     </div>
      
