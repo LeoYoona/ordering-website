@@ -219,3 +219,12 @@ form.example::after {
   color: #ff3300;
   font-weight: bold;
 }
+.vcenter-item{
+  display: flex;
+  
+}
+.gallery-imgs { width :80%;
+  margin:0 auto;
+  float:none;
+  align-items: center;
+  }
