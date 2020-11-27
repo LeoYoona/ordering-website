@@ -163,6 +163,10 @@ form.example::after {
   border-radius: 20px;
   background: url(img/dr.png);
   font-size: 14px;
+  border-color:#FFF;
+}
+.activeBtn{
+  border-color:#FF3300;  background-color: #FF3300;
 }
 .filterBtn {
   float: right;
@@ -253,6 +257,8 @@ form.example::after {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background: #F4F4F4;
+
 
   /* display: flex;
   justify-content: center; */
