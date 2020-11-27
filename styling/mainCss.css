@@ -244,4 +244,17 @@ form.example::after {
 .menuItems p{
   color: #808080;
 }
+.footerYtw img {
+  width: 38%;
+  height: auto;
+}
+.footerYtw{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  /* display: flex;
+  justify-content: center; */
+}
 
