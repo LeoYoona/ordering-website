@@ -258,17 +258,23 @@ form.example::after {
   height: auto;
 }
 .footerYtw{
-  display: flex;
+  
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   background: #F4F4F4;
-
-
-  /* display: flex;
-  justify-content: center; */
+  margin:0 auto;
+  display :flex;
+  justify-content: center;
+  text-align: center;
+} 
+.social-wrap{
+  margin:0 auto;
+  display :flex;
+  justify-content: center;
 }
-.footerr{
-  margin:0 auto;display :flex
+.social img {
+  max-width: 25%;
+  height: auto;
 }
 
