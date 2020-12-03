@@ -271,10 +271,18 @@ form.example::after {
 .social-wrap{
   margin:0 auto;
   display :flex;
-  justify-content: center;
+  align-items: center;
+  width: 200px;
 }
-.social img {
-  max-width: 25%;
-  height: auto;
+.social i { 
+ color:#3D4849;
 }
 
+.reserv{
+  margin:0 auto;
+  display :flex;
+}
+
+.formMargin input{
+  margin-top: 10px;;
+}
