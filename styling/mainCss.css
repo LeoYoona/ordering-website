@@ -292,3 +292,15 @@ form.example::after {
   margin: 0 auto;
   display: block;
 }
+.reviewImgHead{
+  width:100px;
+  height:100px;
+  object-fit:cover;
+  border-radius:50%;
+}
+.reviewImg{
+  width:70px;
+  height:70px;
+  object-fit:cover;
+  border-radius:50%;
+}
