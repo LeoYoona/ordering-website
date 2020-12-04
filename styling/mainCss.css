@@ -286,3 +286,8 @@ form.example::after {
 .formMargin input{
   margin-top: 10px;;
 }
+.centered-element{
+  width:50%;
+  margin: 0 auto;
+  display: block;
+}
