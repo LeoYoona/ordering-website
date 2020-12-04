@@ -253,8 +253,9 @@ form.example::after {
 .menuItems p{
   color: #808080;
 }
-.footerYtw img {
-  width: 38%;
+
+.imgFooter img {
+  width: 50%;
   height: auto;
 }
 .footerYtw{
@@ -268,12 +269,7 @@ form.example::after {
   justify-content: center;
   text-align: center;
 } 
-.social-wrap{
-  margin:0 auto;
-  display :flex;
-  align-items: center;
-  width: 200px;
-}
+
 .social i { 
  color:#3D4849;
 }
@@ -282,12 +278,17 @@ form.example::after {
   margin:0 auto;
   display :flex;
 }
+.reserveImg{
+  width: 90%;
+  margin: 0 auto;
+  float: right;
+}
 
 .formMargin input{
   margin-top: 10px;;
 }
 .centered-element{
-  width:50%;
+  width:60%;
   margin: 0 auto;
   display: block;
 }
