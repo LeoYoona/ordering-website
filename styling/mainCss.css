@@ -3,9 +3,7 @@
   padding: 0;
   font-family: Arial, Verdana;
 }
-.headerText{
-  font-family: 'Poppins', sans-serif;
-}
+
 .container {
   padding: 0;
   margin: 0;
@@ -30,7 +28,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ff3300;
-  text-transform: uppercase;
+}
+.headerText{
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.5vw;
+  padding-top: 12vw;
+  font-weight:800;
 }
 .containerBG {
   position: relative;
@@ -49,6 +52,9 @@
   /* top right bottom left */
   text-align: center;
 }
+.custom-toggler.navbar-toggler {
+  color: #ff3300;
+} 
 
 ul {
   list-style-type: none;
@@ -161,17 +167,17 @@ form.example::after {
 .margin0 {
   margin: 0;
 }
-.btns {
-  width: 145px;
-  height: 33px;
-  margin: 10px;
-  border-radius: 20px;
-  background: url(img/dr.png);
-  font-size: 14px;
-  border-color:#FFF;
+.btns {  
+    color: #808080 !important;
+    margin: 1vw;
+    width: 8vw !important;    
 }
+
 .activeBtn{
-  border-color:#FF3300;  background-color: #FF3300;
+  border:0;  
+  background-color: #FF3300 !important;
+  color: #FFF !important;
+  border-radius: 20px !important;
 }
 .filterBtn {
   float: right;

@@ -37,7 +37,7 @@
     <!-- header -->
     <nav class="navbar navbar-expand-lg navbar-light no-pad">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <div class="navbar-brand">
+        <div class="navbar-brand ytwNavimg-logo">
             <img src="img/logoSmol.jpg">
         </div>
 
@@ -60,59 +60,66 @@
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="ytwNavimg">
             <img src="img/eng.png">
         </div>
 
 
 
         <div class="loginBtn">
-            <button class="btns" style="border-color:#FF3300; background-color: #FF3300;">Login/signup</button>
+            <button class="btns activeBtn">Login/signup</button>
         </div>
-        <div class="loginPfp" style="display:none;">
+        <div class="loginPfp ytwNavimg" style="display:none;">
             <button style="border-color: #fff;" id="close-image"><img style="width:25px; height: 25px;"
                     src="img/pfp.png"></button>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span style="color: #ff3300;" class="navbar-toggler-icon"></span>
         </button>
     </nav>
 
 
     <div class="bgimg">
-
-        <div class="page_header_heading clr-org df-30 pt-9 font-weight-bold">
+        <div class="page_header_heading clr-org df-30 font-weight-bold">
             <h2 class="headerText"><b>Restaurant</b></h2>
         </div>
-
     </div>
     <!-- header end -->
 
     <div class="container p-0 " style="padding:0; margin:2;">
         <div class="menu-type-btns">
-            <button class="btns activeBtn">All</button>
-            <button class="btns">North Indian</button>
-            <button class="btns">Italian Style Pizza</button>
-            <button class="btns">North Indian</button>
-            <button class="btns">North Indian</button>
-            <button class="btns">North Indian</button>
+            <button class="btns btn btn-light activeBtn">All</button>
+            <button class="btns btn btn-light ">North Indian</button>
+            <button class="btns btn btn-light">Italian Pizza</button>
+            <button class="btns btn btn-light btnHidden">North Indian</button>
+            <button class="btns btn btn-light btnHidden">North Indian</button>
+            <button class="btns btn btn-light btnHidden">North Indian</button>
         </div>
     </div>
-    <div class="container" style="padding:0; margin:1;">
+    <div class="container" style="padding:1; margin:1;">
         <div class="row">
-            <input class="col form-control w-75" type="text" placeholder="Bijv. abcd" aria-label="Search">
-            <div class="col">
+            <div class="col-md-5 col-xs-12 SearchBar row">
+                <div class="col-md-1">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" placeholder="Bijv. abcd" aria-label="Search">
+                </div>
+            </div>
+
+            <div class="deliveryTakeaway col-sm-4 col-xs-6 ">
                 <span>
-                    <button class="btns filterBtn ">Takeaway</button>
-                    <button class="btns filterBtn activeBtn">Delivery</button>
+                    <button class="btn btn-light btn-rounded">Takeaway</button>
+                    <button class="btn btn-light activeBtn">Delivery</button>
                 </span>
             </div>
-            <div class="col-sm-3 pd-l-0">
+            <div class="col-sm-3 col-xs-2 dropdownMenu">
                 <div class="form-group df-ja">
-                    <label class="df-14 sort-label">Soort</label>
-                    <select class="select-css select-org-drop list_sort df-14">
-                        <option value="distance">Afstand</option>
+                    <label class="df-14 sort-label">Sort</label>
+                    <select class="select-css select-org-drop list_sort df-14"
+                        style="border: #FFF !important; color: #808080">
+                        <option value="distance">Select</option>
                         <option value="alphabet">Alfabetisch</option>
                         <option value="rating">Beoordeling</option>
                         <option value="cost_l_h">Kosten (laag tot hoog)</option>
@@ -127,27 +134,47 @@
     <!-- poweredYTW -->
 
     <div class="p-5 row container">
-        <div class="col-md-3 tab">
+        <div class="menu col-sm-3 col-xs-12 tab">
             <h4><b>MENU</b></h4>
 
-            <a style="color:#000;" class="tablinks" href=#Breakfast>
-                <span>Breakfast </span>
-                <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
-            </a>
-            <a style="color:#000;" class="tablinks" href=#Lunch>
-                <span>Lunch </span>
-                <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
-            </a>
-            <a style="color:#000;" class="tablinks" href=#Dinner>
-                <span>Dinner </span>
-                <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
-            </a>
-            <a style="color:#000;" class="tablinks" href=#Drinks>
-                <span>Drinks </span>
-                <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
-            </a>
+            <div class="menuLarge">
+                <a style="color:#000;" class="tablinks" href=#Breakfast>
+                    <span>Breakfast </span>
+                    <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
+                </a>
+                <a style="color:#000;" class="tablinks" href=#Lunch>
+                    <span>Lunch </span>
+                    <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
+                </a>
+                <a style="color:#000;" class="tablinks" href=#Dinner>
+                    <span>Dinner </span>
+                    <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
+                </a>
+                <a style="color:#000;" class="tablinks" href=#Drinks>
+                    <span>Drinks </span>
+                    <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
+                </a>
+            </div>
+
+            <div class=" menuPhone" style="display:none;">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img class="icons" src="img/b.png">
+                    </div>
+                    <div class="col-xs-2">
+                        <img class="icons" src="img/b.png">
+                    </div>
+                    <div class="col-xs-2">
+                        <img class="icons" src="img/b.png">
+                    </div>
+                    <div class="col-xs-2">
+                        <img class="icons" src="img/b.png">
+                    </div>
+                </div>
+            </div>
         </div>
-        <DIV class='col-md-8'>
+
+        <DIV class='col-sm-8'>
             <H4><b>CATERGORY NAME</b></H4>
 
             <div id="Breakfast" class="p-4">
@@ -283,7 +310,7 @@
             </div>
         </DIV>
 
-        <DIV class='col-md-1'>
+        <DIV class='col-md-1 poweredYTW'>
             <div style="display:table-cell; vertical-align:middle; text-align:center">
                 <img src="img/poweredYTW.png">
             </div>

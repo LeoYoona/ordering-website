@@ -1,18 +1,63 @@
 /* mobileStylesheet.css */
 /* Use a media query to add a breakpoint at 800px: */
-@media(max-width: 800px) {
-    .loginPfp{
-        display: block !important;
-    }
-    .loginBtn{
-        display: none !important;
-    }
+@media (max-width: 768px) {
+  .loginPfp, .menuPhone {
+    display: block !important;
+    border: 0;
+    background: none;
+    box-shadow: none;
+  }
+  .loginBtn, .menuLarge,  .SearchBar i, .reserveImg img {
+    display: none !important;
+  }
 
-    
+  .menuPhone{
+    width: 100% !important;
+  }
+
+  .ytwNavimg-logo img {
+    width: 50%;
+    height: auto;
+  }
+
+  .reservationForm{
+    padding:0 !important;
+    width: 100% !important;
+  }
+  .ytwNavimg img, .loginPfp img{
+    width: 8vw;
+    height: auto;
+  }
+
+  .poweredYTW img, .btnHidden {
+    display: none !important;
+  }
+
+/* .gallery-imgs img{
+  width: 40% !important;
+  height: auto;
+} */
+
+.Address{
+  width: 100% !important;
 }
+/* .btns  */
+.menu-type-btns button{
+    width: 25% !important;
+    height: auto;
+    font-size: 3vw !important;
+  }
+ 
+  .deliveryTakeaway button{
+    font-size: 3vw !important;
+  }
 
-  /* @media screen and (max-width: 600px) {
-    .loginBtn {
-      display: none;
-    }
-  } */
+  .icons{
+    width: 16vw;
+    height:auto;
+  }
+
+  .menu{
+    padding:0 !important;
+  }
+}
