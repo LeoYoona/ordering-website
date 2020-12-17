@@ -1,0 +1,18 @@
+/* mobileStylesheet.css */
+/* Use a media query to add a breakpoint at 800px: */
+@media(max-width: 800px) {
+    .loginPfp{
+        display: block !important;
+    }
+    .loginBtn{
+        display: none !important;
+    }
+
+    
+}
+
+  /* @media screen and (max-width: 600px) {
+    .loginBtn {
+      display: none;
+    }
+  } */
