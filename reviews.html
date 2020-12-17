@@ -3,6 +3,8 @@
 <html>
 <!-- <script src="styling/main.js"></script> -->
 <link rel="stylesheet" href="styling/mainCss.css">
+<link rel="stylesheet" href="styling/mobileStylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Bootstrap CSS file -->
@@ -37,59 +39,64 @@
 
 
     <!-- header -->
-    <div class="navContainer">
-        <nav class="navbar navbar-expand-lg no-pad">
-            <div class="row">
-                <div class="col-sm">
-                    <img src="img/logoSmol.jpg">
-                </div>
-                <div class="col-sm-10">
-                    <div class="navBar ">
-                        <ul class="flex-container">
-                            <li><a href="index.html">WHAT WE HAVE</a></li>
-                            <li><a href="gallery.html">GALLERY</a></li>
-                            <li><a href="reservation.html">RESERVATIONS</a></li>
-                            <li><a href="contactUs.html">CONTACT US</a></li>
-                            <li class="activeLink"><a href="reviews.html">REVIEWS</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div>
-                        <div class="row">
-                            <div class="col-sm p-1">
-                                <img src="img/eng.png">
-                            </div>
-                            <div class="col-sm">
-                                <button class="btns"
-                                    style="border-color:#FF3300; background-color: #FF3300;">Login/signup</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-    </div>
-
-    </nav>
-
-    <div class="bgimg">
-
-        <div class="page_header_heading clr-org df-30 pt-9 font-weight-bold">
-            <h2 class="headerText"><b>Reviews</b></h2>
+    <nav class="navbar navbar-expand-lg navbar-light no-pad">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <div class="navbar-brand ytwNavimg-logo">
+            <img src="img/logoSmol.jpg">
         </div>
 
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link " href="index.html">WHAT WE HAVE <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">RESERVATIONS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">CONTACT US</a>
+                </li>
+                <li class="nav-item active activeLink">
+                    <a class="nav-link" href="reviews.html">REVIEWS</a>
+                </li>
+            </ul>
+        </div>
+        <div class="ytwNavimg">
+            <img src="img/eng.png">
+        </div>
+
+
+
+        <div class="loginBtn">
+            <button class="btns activeBtn">Login/signup</button>
+        </div>
+        <div class="loginPfp ytwNavimg" style="display:none;">
+            <button style="border-color: #fff;" id="close-image"><img style="width:25px; height: 25px;"
+                    src="img/pfp.png"></button>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span style="color: #ff3300;" class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+
+    <div class="bgimg">
+        <div class="page_header_heading clr-org df-30 font-weight-bold">
+            <h2 class="headerText"><b>Reviews</b></h2>
+        </div>
     </div>
     <!-- header end -->
     <div class=container>
 
         <div class="row mb-3">
-            <div class="col-sm-2 ">
+            <div class="col-xs-2 ">
                 <img src="img/dine.jpg" class="reviewImgHead" />
             </div>
-            <div class="col-sm-10 ">
+            <div class="col-xs-10 ">
                 <div style="color: #FF3300; font-size: 3vw;">
                     &#9733; &#9733; &#9733; &#9733;
                 </div>
@@ -100,18 +107,18 @@
         </div>
 
         <div class="row mb-2">
-            <div class="col-sm-2 ">
+            <div class="col-xs-2 ">
                 <img src="img/person.png" class="reviewImg" />
             </div>
 
-            <div class="col-sm-10 p-0 ">
+            <div class="col-xs-10 p-0 ">
                 <h4>
                     Jimin
                 </h4>
                 <div style="color: #FF3300; font-size: 1.5vw;">
                     &#9733; &#9733; &#9733; &#9733;
                 </div>
-                <p style="font-size: 10px">
+                <p style="font-size: 1vw">
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
                     nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamcoUt
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
@@ -123,42 +130,18 @@
 
 
         <div class="row mb-2">
-            <div class="col-sm-2 ">
+            <div class="col-xs-2 ">
                 <img src="img/person.png" class="reviewImg" />
             </div>
 
-            <div class="col-sm-10 p-0 ">
+            <div class="col-xs-10 p-0 ">
                 <h4>
                     Jimin
                 </h4>
                 <div style="color: #FF3300; font-size: 1.5vw;">
                     &#9733; &#9733; &#9733; &#9733;
                 </div>
-                <p style="font-size: 10px">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamcoUt
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                </p>
-            </div>
-        </div>
-
-
-
-
-        <div class="row mb-2">
-            <div class="col-sm-2 ">
-                <img src="img/person.png" class="reviewImg" />
-            </div>
-
-            <div class="col-sm-10 p-0 ">
-                <h4>
-                    Jimin
-                </h4>
-                <div style="color: #FF3300; font-size: 1.5vw;">
-                    &#9733; &#9733; &#9733; &#9733;
-                </div>
-                <p style="font-size: 10px">
+                <p style="font-size: 1vw">
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
                     nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamcoUt
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
@@ -171,18 +154,18 @@
 
 
         <div class="row mb-2">
-            <div class="col-sm-2 ">
+            <div class="col-xs-2 ">
                 <img src="img/person.png" class="reviewImg" />
             </div>
 
-            <div class="col-sm-10 p-0 ">
+            <div class="col-xs-10 p-0 ">
                 <h4>
                     Jimin
                 </h4>
                 <div style="color: #FF3300; font-size: 1.5vw;">
                     &#9733; &#9733; &#9733; &#9733;
                 </div>
-                <p style="font-size: 10px">
+                <p style="font-size: 1vw">
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
                     nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamcoUt
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
@@ -195,18 +178,42 @@
 
 
         <div class="row mb-2">
-            <div class="col-sm-2 ">
+            <div class="col-xs-2 ">
                 <img src="img/person.png" class="reviewImg" />
             </div>
 
-            <div class="col-sm-10 p-0 ">
+            <div class="col-xs-10 p-0 ">
                 <h4>
                     Jimin
                 </h4>
                 <div style="color: #FF3300; font-size: 1.5vw;">
                     &#9733; &#9733; &#9733; &#9733;
                 </div>
-                <p style="font-size: 10px">
+                <p style="font-size: 1vw">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamcoUt
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <div class="row mb-2">
+            <div class="col-xs-2 ">
+                <img src="img/person.png" class="reviewImg" />
+            </div>
+
+            <div class="col-xs-10 p-0 ">
+                <h4>
+                    Jimin
+                </h4>
+                <div style="color: #FF3300; font-size: 1.5vw;">
+                    &#9733; &#9733; &#9733; &#9733;
+                </div>
+                <p style="font-size: 1vw">
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
                     nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamcoUt
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis
@@ -246,7 +253,7 @@
 
 
             <div class=" mt-4 border-top border-dark">
-                <p style="font-size: 10px;">
+                <p style="font-size: 1vw;">
 
                     By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
                     Content Policies. All trademarks are properties of their respective owners. © 2020 - Y the Wait®.All

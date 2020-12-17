@@ -299,19 +299,14 @@ form.example::after {
   display: block;
 }
 .reviewImgHead{
-  width:100px;
-  height:100px;
+  width:8vw;
+  height:8vw;
   object-fit:cover;
   border-radius:50%;
 }
 .reviewImg{
-  width:70px;
-  height:70px;
+  width:5vw;
+  height:5vw;
   object-fit:cover;
   border-radius:50%;
-}
-
-.menu-type-btns
-{
-  
 }
