@@ -4,10 +4,6 @@
   font-family: Arial, Verdana;
 }
 
-.container {
-  padding: 0;
-  margin: 0;
-}
 .catBtns {
   margin: 10px;
 }
@@ -35,11 +31,7 @@
   padding-top: 12vw;
   font-weight:800;
 }
-.containerBG {
-  position: relative;
-  text-align: center;
-  color: white;
-}
+
 /* Centered text */
 .centeredHeaderText {
   position: absolute;
@@ -56,21 +48,8 @@
   color: #ff3300;
 } 
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  text-align: center;
-  float: left;
-}
-
 li a {
-  display: block;
-  padding: 8px;
+  
   color: #000;
   text-decoration: none;
 }
@@ -83,23 +62,12 @@ a:hover {
   margin-left: 0.5vw;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.select-css{
+  border: #FFF ; 
+  color: #808080
 }
-
-
-
-.flex-container > li {
-  /* margin: 1vw; */
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.2vw;
-  text-transform: uppercase;
-}
-.container {
-  padding: 5vw;
+.showMore{
+  color: #ff3300;"
 }
 .timings {
   padding-top: 2vw;
@@ -115,11 +83,14 @@ a:hover {
   display: flex;
   justify-content: center;
 }
-
-li {
+.loginBtn .btn {
+  padding: 5px 12px;
+  margin-left:10px;
+}
+.centered-nav li {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 29px;
   text-transform: uppercase;
 }
@@ -140,6 +111,10 @@ form.example input[type="text"] {
   float: left;
   width: 80%;
   background: #f1f1f1;
+}
+
+.menu {
+  background: #fff;
 }
 
 form.example button {
@@ -170,7 +145,10 @@ form.example::after {
 .btns {  
     color: #808080 !important;
     margin: 1vw;
-    width: 8vw !important;    
+    background: #fff;
+    width: 8vw !important;   
+    border-radius: 20px !important; 
+    border:0;  
 }
 
 .activeBtn{
