@@ -67,7 +67,7 @@ a:hover {
   color: #808080
 }
 .showMore{
-  color: #ff3300;"
+  color: #ff3300;
 }
 .timings {
   padding-top: 2vw;
@@ -94,6 +94,10 @@ a:hover {
   line-height: 29px;
   text-transform: uppercase;
 }
+.gray_tab_img, .white_tab_img{
+  width: 1vw;
+  height: auto;
+}
 
 /* search box*/
 * {
@@ -102,6 +106,7 @@ a:hover {
 .searchBar {
   padding-top: 10vw;
   padding-bottom: 4vw;
+  border:  #fff;
 }
 
 form.example input[type="text"] {
@@ -145,7 +150,7 @@ form.example::after {
 .btns {  
     color: #808080 !important;
     margin: 1vw;
-    background: #fff;
+    background: #fff !important;
     width: 8vw !important;   
     border-radius: 20px !important; 
     border:0;  
@@ -154,11 +159,17 @@ form.example::after {
 .activeBtn{
   border:0;  
   background-color: #FF3300 !important;
+  box-shadow: 2px 2px #ccc;
   color: #FFF !important;
   border-radius: 20px !important;
 }
-.filterBtn {
-  float: right;
+.filterbtns{
+  color: #808080 ;
+    background: #fff !important;
+    width: 8vw !important;   
+    border-radius: 20px !important;
+    /* border: 1px solid grey !important; */
+    box-shadow: 2px 2px #ccc;
 }
 
 /* Style the tab */
@@ -174,7 +185,7 @@ form.example::after {
   display: block;
   background-color: inherit;
   color: black;
-  padding: 22px 16px;
+  padding: 0.5vw;
   width: 100%;
   border: none;
   outline: none;
@@ -229,14 +240,53 @@ form.example::after {
   
   height: 20px;
 }
+.addBtn{
+  border: none;
+}
+.extraAmountBtn{
+  color: #ddd !important;
+  background-color:#ff3300 !important;
+  box-shadow: 2px 2px #ccc !important;
+  border-radius: 5px !important;
+}
 .menuItems{
   line-height: 80%;
   padding:0.5vw;
   border-bottom: 1px solid #ccc;
 }
-.menuItems p{
+.menuItems p, .itemNos, .Extras{
   color: #808080;
 }
+
+.menu-cont{
+  background: #FFF !important;
+}
+/* counter btn css*/
+span {cursor:pointer; }
+		.number{
+			margin:100px;
+		}
+		.minus, .plus{
+			width:20px;
+			height:20px;
+			background:#f2f2f2;
+			border-radius:4px;
+			padding:8px 5px 8px 5px;
+			border:1px solid #ddd;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+		}
+		input{
+			height:34px;
+      width: 100px;
+      text-align: center;
+      font-size: 26px;
+			border:1px solid #ddd;
+			border-radius:4px;
+      display: inline-block;
+      vertical-align: middle;
+			
 
 .imgFooter img {
   width: 50%;

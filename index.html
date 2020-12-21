@@ -16,6 +16,7 @@
 <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+<script src="styling/main.js"></script>
 
 <head>
     <title>Restaurant web page</title>
@@ -92,7 +93,7 @@
 
 
             <div class="loginBtn">
-                <button class="btns activeBtn">Login/signup</button>
+                <button class="btns btn btn-light activeBtn">Login/signup</button>
             </div>
             <div class="loginPfp ytwNavimg" style="display:none;">
                 <button style="border-color: #fff;" id="close-image"><img style="width:25px; height: 25px;"
@@ -123,7 +124,7 @@
                 <button class="btns btn btn-light">Italian Pizza</button>
                 <button class="btns btn btn-light btnHidden">North Indian</button>
                 <button class="btns btn btn-light btnHidden">North Indian</button>
-                <a class="showMore" href="#"  > show more..</a>
+                <a class="showMore" href="#"> <u>Show more</u> </a>
             </div>
         </div>
         <div class="container-fuild">
@@ -139,14 +140,19 @@
 
                 <div class="deliveryTakeaway col-sm-4 col-xs-6 ">
                     <span>
-                        <button class="btns btn btn-light btn-rounded">Takeaway</button>
-                        <button class="btn btn-light activeBtn">Delivery</button>
+                        <button class="filterbtns btn btn-light "> <img
+                                src="https://www.ythewait.com/order/assets/images/frontend/i-gray-menu.png"
+                                class="gray_tab_img">Takeaway</button>
+
+                        <button class="btn btn-light activeBtn"><img
+                                src="https://www.ythewait.com/order/assets/images/frontend/i-white-menu.png"
+                                class="white_tab_img"> Delivery</button>
                     </span>
                 </div>
                 <div class="col-sm-3 col-xs-2 dropdownMenu">
                     <div class="form-group df-ja">
                         <label class="df-14 sort-label">Sort</label>
-                        <select class="select-css select-org-drop list_sort df-14" >
+                        <select class="select-css select-org-drop list_sort df-14">
                             <option value="distance">Select</option>
                             <option value="alphabet">Alfabetisch</option>
                             <option value="rating">Beoordeling</option>
@@ -160,27 +166,27 @@
             </div>
         </div>
 
-        <div class="container-fuild p-25">
+        <div class="menu-cont container-fuild mt-5">
             <div class="row">
                 <div class="menu col-sm-3 col-xs-12 tab">
                     <h4><b>MENU</b></h4>
 
                     <div class="menuLarge">
-                        <a style="color:#000;" class="tablinks" href=#Breakfast>
-                            <span>Breakfast </span>
-                            <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
+                        <a class="tablinks" href=#Breakfast>
+                            <span><b>Breakfast</b></span>
+                            <br><small class="itemNos pl-2">6 items</small><span class="arrow float-right"> > </span>
                         </a>
-                        <a style="color:#000;" class="tablinks" href=#Lunch>
-                            <span>Lunch </span>
-                            <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
+                        <a class="tablinks" href=#Lunch>
+                            <span><b>Lunch</b> </span>
+                            <br><small class="itemNos pl-2">6 items</small><span class="arrow float-right"> > </span>
                         </a>
-                        <a style="color:#000;" class="tablinks" href=#Dinner>
-                            <span>Dinner </span>
-                            <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
+                        <a class="tablinks" href=#Dinner>
+                            <span><b>Dinner</b> </span>
+                            <br><small class="itemNos pl-2">6 items</small><span class="arrow float-right"> > </span>
                         </a>
-                        <a style="color:#000;" class="tablinks" href=#Drinks>
-                            <span>Drinks </span>
-                            <br><small class="pl-2">6 items</small><span class="arrow float-right"> > </span>
+                        <a class="tablinks" href=#Drinks>
+                            <span><b>Drinks</b> </span>
+                            <br><small class="itemNos pl-2">6 items</small><span class="arrow float-right"> > </span>
                         </a>
                     </div>
 
@@ -206,34 +212,68 @@
                     <H4><b>CATERGORY NAME</b></H4>
 
                     <div id="Breakfast" class="p-4">
-                        <div class="menuItems">
-                            <h5>Breakfast Food Items start here <span class="float-right"> €10 <button><img
-                                            src="img/addBtn.png"></span>
+                        <div class="menuItems pb-4">
+                            <h5>Breakfast Food Items start here <span class="float-right"> €10 <button
+                                        class="addBtn "><button class="addBtn"><img src="img/addBtn.png"></button>
+                                </span>
                             </h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/cs.png">
+                            <div class="Extras mt-5 ">
+                                <p>
+                                    Extras
+                                </p>
+                                <div>
+                                    <input type="checkbox" id="value1" value="sauce">
+                                    <label for="value1"> value 1</label> <span class="float-right"> + $1.50 </span>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="value2" value="sauce">
+                                    <label for="value2"> value 2</label> <span class="float-right"> + $1.50 </span>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="value3" value="sauce">
+                                    <label for="value3"> value 3</label> <span class="float-right"> + $1.50 </span>
+                                </div>
+                                <div class="float-right ">
+                                    <div class="number">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" />
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <div>
+                                        <button class="extraAmountBtn btn btn-light"> + $1.50 </button>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <button id="close-image"><img
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
                                             src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/hot.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/hot.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/cs.png">
                         </div>
@@ -249,25 +289,30 @@
                             <img class="itemClassification" src="img/cs.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"> </span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/hot.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/hot.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/cs.png">
                         </div>
@@ -282,25 +327,30 @@
                             <img class="itemClassification" src="img/cs.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"> </span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/hot.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/hot.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/cs.png">
                         </div>
@@ -309,31 +359,37 @@
 
                     <div id="Drinks" class="p-4">
                         <div class="menuItems">
-                            <h5>Drink Items start here <span class="float-right"> €10 <img src="img/addBtn.png"></span>
+                            <h5>Drink Items start here <span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span>
                             </h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/cs.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"> </span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/hot.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/hot.png">
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                         </div>
                         <div class="menuItems">
-                            <h5>Food Item<span class="float-right"> €10 <img src="img/addBtn.png"></span></h5>
+                            <h5>Food Item<span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/cs.png">
                         </div>
