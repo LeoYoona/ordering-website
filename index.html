@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <!-- alt shift f for indent  -->
 <html>
-<!-- <script src="styling/main.js"></script> -->
+<!--basic structure stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responisve.css">
+<!--basic structure stylesheets end -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="styling/mainCss.css">
 <link rel="stylesheet" href="styling/mobileStylesheet.css">
@@ -18,6 +26,7 @@
 <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="styling/main.js"></script>
 
 <head>
@@ -93,8 +102,8 @@
 
 
 
-            <div class="loginBtn">
-                <button class="btns btn btn-light activeBtn">Login/signup</button>
+            <div class="loginBtn ">
+                <button class="btns btn btn-light activeBtn woShadowBtns">Login/signup</button>
             </div>
             <div class="loginPfp ytwNavimg" style="display:none;">
                 <button style="border-color: #fff;" id="close-image"><img style="width:25px; height: 25px;"
@@ -120,7 +129,7 @@
 
         <div class="container-fuild p-0 ">
             <div class="menu-type-btns">
-                <button class="btns btn btn-light activeBtn">All</button>
+                <button class="btns btn btn-light activeBtn woShadowBtns">All</button>
                 <button class="btns btn btn-light ">North Indian</button>
                 <button class="btns btn btn-light">Italian Pizza</button>
                 <button class="btns btn btn-light btnHidden">North Indian</button>
@@ -131,7 +140,7 @@
         <!-- apply here position absolute ab then place this search inside the input type text -->
         <div class="container-fuild">
             <div class="row">
-                <div class="col-sm-5 col-xs-12  row">
+                <div class="col-sm-6 col-xs-12  row">
                     <div class="search box-search d-flex srch-restaurant srch-restornt-desk">
                         <div class="input-icon ">
                             <img alt="" src="https://www.ythewait.com/order/assets/images/frontend/srch-1.svg">
@@ -141,9 +150,10 @@
                     </div>
                 </div>
 
-                <div class="deliveryTakeaway col-sm-4 col-xs-6 " style="text-align: right;">
+                <div class="deliveryTakeaway col-sm-3 col-xs-6 " style="text-align: right;">
                     <span>
-                        <button class="filterbtns btn btn-light "> <i class="las la-shopping-bag"></i>Takeaway</button>
+                        <button class="filterbtns btns btn btn-light "> <i
+                                class="las la-shopping-bag"></i>Takeaway</button>
 
                         <button class="btn btn-light activeBtn"><i class="las la-motorcycle"></i> Delivery</button>
                     </span>
@@ -152,7 +162,7 @@
                     <div class="form-group df-ja">
                         <label class="df-14 sort-label">Sort</label>
                         <select class="select-css select-org-drop list_sort df-14">
-                            <option value="distance">Select</option>
+                            <option class="select-lbl" value="distance">Select</option>
                             <option value="alphabet">Alfabetisch</option>
                             <option value="rating">Beoordeling</option>
                             <option value="cost_l_h">Kosten (laag tot hoog)</option>
@@ -222,19 +232,19 @@
                             </h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/cs.png">
-                            <div class="Extras mt-3 ">
+                            <div class="Extras mt-3 p-4">
                                 <p>
                                     Extras
                                 </p>
-                                <div>
+                                <div class="check-des ">
                                     <input type="checkbox" id="value1" value="sauce">
                                     <label for="value1"> value 1</label> <span class="float-right"> + $1.50 </span>
                                 </div>
-                                <div>
+                                <div class="check-des">
                                     <input type="checkbox" id="value2" value="sauce">
                                     <label for="value2"> value 2</label> <span class="float-right"> + $1.50 </span>
                                 </div>
-                                <div>
+                                <div class="check-des ">
                                     <input type="checkbox" id="value3" value="sauce">
                                     <label for="value3"> value 3</label> <span class="float-right"> + $1.50 </span>
                                 </div>
@@ -247,7 +257,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
-                                        <button class="extraAmountBtn btn btn-light"> + $1.50 </button>
+                                        <button class="extraAmountBtn btn btn-light"><b>Add + $1.50</b> </button>
                                     </div>
                                 </div>
 
@@ -324,8 +334,8 @@
 
                     <div id="Dinner" class="p-4">
                         <div class="menuItems">
-                            <h5>Dinner Food Items start here <span class="float-right"> €10 <img
-                                        src="img/addBtn.png"></span>
+                            <h5>Dinner Food Items start here <span class="float-right"> €10 <button class="addBtn"><img
+                                            src="img/addBtn.png"></button> </span></h5>
                             </h5>
                             <p>Item decription</p>
                             <img class="itemClassification" src="img/cs.png">
