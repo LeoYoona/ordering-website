@@ -66,10 +66,10 @@ a:hover {
   background-image: url(../../images/frontend/arrow-down-org.png) !important;
   background-size: 14px;
   border: 1px solid #f4f4f4 !important;
-  color: #C2C2C2 !important;
+  color: #c2c2c2 !important;
   background-color: #fff;
   height: 2vw;
-  margin:1vw;
+  margin: 1vw;
 }
 
 .showMore {
@@ -111,14 +111,23 @@ a:hover {
   align-items: center;
   padding: 6px 20px;
 }
+.flag-list {
+  display: none !important;
+}
 
+.flag-list.show {
+  display: block !important;
+}
+.ytwNavimg li {
+  list-style: none;
+}
 .srch-restaurant .srch-nw {
   width: 100%;
   border: 1px solid #f5f5f5;
   padding: 11px 10px 11px 50px !important;
   color: #777;
   border-radius: 4px !important;
-  margin:1vw;
+  margin: 1vw;
 }
 .search {
   width: 100%;
@@ -130,6 +139,14 @@ a:hover {
 }
 .number {
   background: #fff;
+  width: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  float: right;
+  justify-content: center;
 }
 
 .number input {
@@ -145,7 +162,6 @@ a:hover {
   display: inline-block;
   vertical-align: middle;
 }
-
 
 .minus,
 .plus {
@@ -211,18 +227,18 @@ form.example::after {
   width: 8vw !important;
   border-radius: 20px !important;
   border: 0;
-  box-shadow: 1px 1px 3px  #ccc;
+  box-shadow: 1px 1px 3px #ccc;
 }
 
-.woShadowBtns{
-  box-shadow:none !important;
+.woShadowBtns {
+  box-shadow: none !important;
 }
 
 .activeBtn {
   background-color: #ff3300 !important;
   color: #fff !important;
   border-radius: 20px !important;
-  box-shadow: 1px 1px 3px  #ccc;
+  box-shadow: 1px 1px 3px #ccc;
 }
 
 .loginBtn .btn {
@@ -313,7 +329,6 @@ form.example::after {
   height: auto;
 }
 
-
 .menuItems {
   padding: 0.5vw;
   border-bottom: 1px solid #ccc;
@@ -324,7 +339,10 @@ form.example::after {
   color: #808080;
 }
 .Extras {
-  background: #f4f4f4;
+  background: #f8f6f6;
+}
+.categories-lists {
+  background: #fbfbfb !important;
 }
 .menu-cont {
   background-color: #fff !important;
@@ -333,7 +351,6 @@ form.example::after {
 span {
   cursor: pointer;
 }
-
 
 .imgFooter img {
   width: 50%;
@@ -387,11 +404,84 @@ span {
 ::marker {
   visibility: hidden;
 }
-.check-des input[type="checkbox"]:checked + label::before {
-  background-color: #f30;
-  border-color: #f30 !important;
-  color: #fff;
-}
-.reviewContent{
+
+.reviewContent {
   background: #f7f7f7;
 }
+
+/* check box styling css */
+
+.check-des {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.check-des input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.check-des label {
+  position: relative;
+  cursor: pointer;
+}
+
+.check-des input[type="checkbox"] + label::before {
+  border: 0.1em solid #8D8C8C !important;
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.check-des input[type="checkbox"]:checked + label::before {
+  /* background-color: #f30;
+  border-color: #f30 !important; */
+  color: #fff ;
+}
+
+.check-des input[type="checkbox"]:checked ~ label:before {
+  background-color: #f30;
+}
+
+.check-des input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  /* background-color: solid #f30; */
+  color: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after {
+  content: '✔';
+  
+  color: #fff !important;
+  transition: all .2s;
+}
+
+[type="checkbox"]:not(:checked)+label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type="checkbox"]:checked+label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* END of check box styling css */
