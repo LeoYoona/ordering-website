@@ -33,12 +33,14 @@
   text-transform: uppercase;
 }
 
-/* Centered text */
-.centeredHeaderText {
-  position: absolute;
+.reviewImg {
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .navContainer {
   margin: 10px 50px 0px 50px;
@@ -410,13 +412,12 @@ span {
 }
 
 /* check box styling css */
-
-.check-des {
+.check_list .form-group {
   display: block;
   margin-bottom: 15px;
 }
 
-.check-des input {
+.check_list .form-group input {
   padding: 0;
   height: initial;
   width: initial;
@@ -425,64 +426,40 @@ span {
   cursor: pointer;
 }
 
-.check-des label {
+.check_list .form-group label {
   position: relative;
   cursor: pointer;
 }
 
-.check-des input[type="checkbox"] + label::before {
-  border: 0.1em solid #8d8c8c !important;
-  content: "";
+.check_list .form-group label:before {
+  content:'';
   -webkit-appearance: none;
   background-color: transparent;
-  padding: 10px;
+  border: 2px solid #ddd;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 7px;
   display: inline-block;
   position: relative;
   vertical-align: middle;
   cursor: pointer;
   margin-right: 5px;
 }
-
-.check-des input[type="checkbox"]:checked + label::before {
-  /* background-color: #f30;
-  border-color: #f30 !important; */
-  color: #fff;
-}
-
-.check-des input[type="checkbox"]:checked ~ label:before {
+.check_list .form-group input:checked + label:before{
   background-color: #f30;
+  border:2px solid #f30 !important;
 }
-
-.check-des input:checked + label:after {
-  content: "";
+.check_list .form-group input:checked + label:after {
+  content: '';
   display: block;
   position: absolute;
-  top: 2px;
-  left: 9px;
-  width: 6px;
-  height: 14px;
-  /* background-color: solid #f30; */
-  color: solid #fff;
+  top: 1px;
+  left: 7px;
+  width: 5px;
+  height: 12px;
+  border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-}
 
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-  content: "✔";
-
-  color: #fff !important;
-  transition: all 0.2s;
-}
-
-[type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0);
-}
-
-[type="checkbox"]:checked + label:after {
-  opacity: 1;
-  transform: scale(1);
 }
 /* END of check box styling css */
 .stars {
