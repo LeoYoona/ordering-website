@@ -390,8 +390,8 @@ span {
   display: block;
 }
 .reviewImgHead {
-  width: 8vw;
-  height: 8vw;
+  width: 10vw;
+  height: 10vw;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -431,8 +431,8 @@ span {
 }
 
 .check-des input[type="checkbox"] + label::before {
-  border: 0.1em solid #8D8C8C !important;
-  content:'';
+  border: 0.1em solid #8d8c8c !important;
+  content: "";
   -webkit-appearance: none;
   background-color: transparent;
   padding: 10px;
@@ -446,7 +446,7 @@ span {
 .check-des input[type="checkbox"]:checked + label::before {
   /* background-color: #f30;
   border-color: #f30 !important; */
-  color: #fff ;
+  color: #fff;
 }
 
 .check-des input[type="checkbox"]:checked ~ label:before {
@@ -454,7 +454,7 @@ span {
 }
 
 .check-des input:checked + label:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 2px;
@@ -467,21 +467,28 @@ span {
   transform: rotate(45deg);
 }
 
-[type="checkbox"]:not(:checked)+label:after,
-[type="checkbox"]:checked+label:after {
-  content: '✔';
-  
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: "✔";
+
   color: #fff !important;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
-[type="checkbox"]:not(:checked)+label:after {
+[type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
   transform: scale(0);
 }
 
-[type="checkbox"]:checked+label:after {
+[type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1);
 }
 /* END of check box styling css */
+.stars {
+  color: #ff3300;
+  font-size: 1.5vw;
+}
+.date{
+  color:#c2c2c2;
+}
