@@ -10,7 +10,9 @@
   .loginBtn, .menuLarge,  .SearchBar i, .reserveImg img {
     display: none !important;
   }
-
+.navbar {
+  margin-bottom: 0 !important;
+}
   .menuPhone{
     width: 100% !important;
   }
@@ -18,6 +20,13 @@
   .ytwNavimg-logo img {
     width: 50%;
     height: auto;
+  }
+  .navbar-brand{
+    width: fit-content;
+  }
+  .headerText {
+    padding-top: 4vw;
+    font-size:3vw !important;
   }
 
   .reservationForm{
@@ -27,6 +36,11 @@
   .ytwNavimg img, .loginPfp img{
     width: 8vw;
     height: auto;
+  }
+
+  .navbar-toggler{
+    color: #f30  !important;
+    border: 0 !important;
   }
 
   .poweredYTW img, .btnHidden {
