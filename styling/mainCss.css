@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Verdana;
+  font-size:15px ;
 }
 
 
@@ -17,6 +17,12 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+
+.nav > li > a {
+		padding: 0px 15px  !important;
 }
 .page_header_heading {
   position: absolute;
@@ -64,8 +70,7 @@ a:hover {
   color: #ff3300;
 }
 .activeLink a {
-  border-bottom: 5px solid #ff3300;
-  margin-left: 0.5vw;
+  border-bottom: 3px solid #ff3300;
 }
 
 .select-org-drop {
@@ -227,17 +232,28 @@ form.example::after {
   margin: 0;
 }
 .btns {
-  color: #808080 !important;
-  margin: 1vw;
-  background: #fff !important;
-  width: 8vw !important;
-  border-radius: 20px !important;
+  color: #9e9d9d !important;
+  background: #fff ;
+  border-radius: 30px !important;
   border: 0;
+  box-shadow: 1px 1px 3px #ccc;
+  margin: 15px;
+  font-size:12px !important ;
+  /* padding-right: 15px ;
+  padding-left:15px ; */
+  /* t r b l */
+}
+
+.takeawayBtn{
+  box-shadow: 1px 4px 3px #ccc
+}
+.deliveryBtn{
   box-shadow: 1px 1px 3px #ccc;
 }
 
 .woShadowBtns {
   box-shadow: none !important;
+  border-color: #f30 !important;
 }
 
 .activeBtn {
@@ -247,16 +263,16 @@ form.example::after {
   box-shadow: 1px 1px 3px #ccc;
 }
 
-.loginBtn .btn {
+/* .loginBtn .btn {
   padding: 5px 12px;
   margin-left: 10px;
-}
-.filterbtns {
+} */
+/* .filterbtns {
   color: #808080;
   background: #fff !important;
   width: 8vw !important;
   border-radius: 20px !important;
-}
+} */
 
 /* Style the tab */
 .tab {
