@@ -27,10 +27,14 @@
 }
 .headerText {
   font-family: "Poppins", sans-serif;
-  padding-top: 3vw;
+  padding-top: 4vw;
   font-weight: 800;
   text-transform: uppercase;
   font-size:3vw !important;
+}
+
+.flag-icon{
+  font-size: 20px;
 }
 
 .reviewImg {
