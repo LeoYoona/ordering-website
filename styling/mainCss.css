@@ -233,7 +233,7 @@ form.example::after {
 }
 .btns {
   color: #9e9d9d !important;
-  background: #fff ;
+  background: #fff !important ;
   border-radius: 30px !important;
   border: 0;
   box-shadow: 1px 1px 3px #ccc;
