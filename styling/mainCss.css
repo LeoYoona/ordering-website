@@ -7,12 +7,23 @@
 .headerText {
   font-family: "Poppins", sans-serif;
   padding-top: 4vw;
-  font-weight: 800;
+  font-weight: 650;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 2.5em !important;
+  line-height: 1;
 }
 .subheaderText {
-  font-size: 2em;
+  font-size: 2.5em !important;
+  font-weight: 550 !important; 
+  line-height: 1;
+}
+
+.semi-bold-headings {
+   font-weight: 550 !important; 
+}
+
+.tablinksFont{
+  font-size: 1.75rem;
 }
 
 .catBtns {
@@ -66,8 +77,8 @@
   color: #ff3300;
 }
 
-li a {
-  color: #000;
+.nav-item a {
+  color: #000 !important;
   text-decoration: none;
 }
 /* mouse over link */
@@ -76,6 +87,10 @@ a:hover {
 }
 .activeLink a {
   border-bottom: 3px solid #ff3300;
+}
+
+.tablinks .activeTab{
+  color: #ff3300 !important;
 }
 
 .select-org-drop {
@@ -267,17 +282,6 @@ form.example::after {
   border-radius: 20px !important;
   box-shadow: 1px 1px 3px #ccc;
 }
-
-/* .loginBtn .btn {
-  padding: 5px 12px;
-  margin-left: 10px;
-} */
-/* .filterbtns {
-  color: #808080;
-  background: #fff !important;
-  width: 8vw !important;
-  border-radius: 20px !important;
-} */
 
 /* Style the tab */
 .tab {

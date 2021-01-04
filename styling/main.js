@@ -14,3 +14,10 @@ $(document).ready(function() {
     return false;
   });
 });
+
+$(document).ready(function(){
+  $('.on_click').on('click',function(){
+    $('.on_click').removeClass('activeTab');
+    $(this).addClass('activeTab');
+  });    
+});
