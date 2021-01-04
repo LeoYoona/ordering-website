@@ -29,6 +29,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="styling/main.js"></script>
+
 <head>
     <title>Restaurant web page</title>
 </head>
@@ -46,7 +47,7 @@
                 /* background-repeat: no-repeat; */
             }
         </style>
-       
+
     </div>
 
 
@@ -87,9 +88,9 @@
 
 
             <div class="ytwNavimg">
-                <li class="dropdown dropdown-language nav-item desk-language open">
-                    <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="true">
+                <li class="dropdown dropdown-language nav-item desk-language">
+                    <a class=" nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
                         <i class="flag-icon flag-icon-nl"></i><span class="selected-language"></span>
                     </a>
                     <div class="dropdown-menu flag-list" aria-labelledby="dropdown-flag">
@@ -129,100 +130,101 @@
             </button>
         </nav>
 
-    <div class="bgimg">
-        <div class="page_header_heading clr-org df-20 font-weight-bold">
-            <h1 class="headerText"><b>Reservations</b></h1>
+        <div class="bgimg">
+            <div class="page_header_heading clr-org df-20 font-weight-bold">
+                <h1 class="headerText"><b>Reservations</b></h1>
+            </div>
         </div>
-    </div>
-    <!-- header end -->
+        <!-- header end -->
 
-   
-<div class="conatiner">
-    <div class="row w-50 mx-auto ">
-        <div class="col-md-6 pl-5 ">
-            <h2><b>RESERVE A TABLE</b></h2><br>
-            <h4>Please fill in the deatils</h4>
-            <form>
-                <div class="form-group m-2 formMargin ">
-                    <input type="text" class="form-control " aria-describedby="emailHelp"
-                        placeholder="Full Name">
-                    <div class="form-row ">
-                        <div class="col-4">
-                            <input type="text" class="form-control" placeholder="+31">
-                        </div>
-                        <div class="col-8">
-                            <input type="text" class="form-control" placeholder="Phone number">
-                        </div>
-                    </div>
-                    <input type="email" class="form-control" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Enter email">
-                    <div class="form-row ">
-                        <div class="col-6">
-                            <input type="text" class="form-control" placeholder="Date">
-                        </div>
-                        <div class="col-6">
-                            <input type="text" class="form-control" placeholder="Time">
-                        </div>
-                    </div>
-                    <input type="text" class="form-control" placeholder="No. of Persons">
 
-                    <textarea class="form-control mt-2" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Add Messge (optional)"></textarea>
+        <div class="conatiner">
+            <div class="row w-50 mx-auto ">
+                <div class="col-md-6 pl-5 ">
+                    <h2><b>RESERVE A TABLE</b></h2><br>
+                    <h4>Please fill in the deatils</h4>
+                    <form>
+                        <div class="form-group m-2 formMargin ">
+                            <input type="text" class="form-control " aria-describedby="emailHelp"
+                                placeholder="Full Name">
+                            <div class="form-row ">
+                                <div class="col-4">
+                                    <input type="text" class="form-control" placeholder="+31">
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" class="form-control" placeholder="Phone number">
+                                </div>
+                            </div>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <div class="form-row ">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Date">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Time">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="No. of Persons">
 
-                    <div class="form-check">
-                        <input class="form-check-input p-2" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label mt-2" for="defaultCheck1">
-                            Hereby I agreee to Terms and Conditions and Akowledge that
-                        </label>
-                    </div>
+                            <textarea class="form-control mt-2" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Add Messge (optional)"></textarea>
 
-                    <button type="submit" class="btn btn-primary mt-2 w-75"
-                        style="background-color:#ff3300; border:#ff3300;">Request Booking</button>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value=""> <small>Hereby I agreee to Terms and Conditions
+                                        and
+                                        Akowledge that</small></label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mt-2 w-75"
+                                style="background-color:#ff3300; border:#ff3300;">Request Booking</button>
+                        </div>
+
+                    </form>
                 </div>
-                
-            </form>
-        </div>
-        <div class="reserveImg col-md-6 pl-5">
-            <img class="reserveImg" src="img/table.png" >
-        </div>
+                <div class="reserveImg col-md-6 pl-5">
+                    <img class="reserveImg" src="img/table.png">
+                </div>
 
-    </div>
-
-</div>
-
-    <!--footer-->
-    <footer>
-        <div class="footerYtw pt-5 mt-5 w-100">
-
-            <div class="imgFooter mb-2">
-                <img src="img/ytwFooter.png" >
-            </div>
-
-            <div>
-                <span class="social col"><a href="https://www.facebook.com/ythewait/"><i
-                            class="fa fa-facebook-f"></i></a></span>
-                <span class="social col"><a href="https://www.linkedin.com/company/ythewait/"><i
-                            class="fa fa-linkedin" aria-hidden="true"></i></a></span>
-                <span class="social col"><a href="https://twitter.com/YTheWait"> <i
-                            class="fa fa-twitter"></i></a></span>
-                <span class="social col"><a href="https://www.youtube.com/c/ythewait"><i
-                            class="fa fa-youtube-play" aria-hidden="true"></i></a></span>
-                <span class="social col"><a href="https://www.instagram.com/ythewait/"><i
-                            class="fa fa-instagram"></i></a></span>
-            </div>
-
-
-
-            <div class=" mt-4 border-top border-dark">
-                <p style="font-size: 10px;">
-                    By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
-                    Content Policies. All trademarks are properties of their respective owners. © 2020 - Y the Wait®.All
-                    rights reserved.
-                </p>
             </div>
 
         </div>
-    </footer>
+
+        <!--footer-->
+        <footer>
+            <div class="footerYtw pt-5 mt-5 w-100">
+
+                <div class="imgFooter mb-2">
+                    <img src="img/ytwFooter.png">
+                </div>
+
+                <div>
+                    <span class="social col"><a href="https://www.facebook.com/ythewait/"><i
+                                class="fa fa-facebook-f"></i></a></span>
+                    <span class="social col"><a href="https://www.linkedin.com/company/ythewait/"><i
+                                class="fa fa-linkedin" aria-hidden="true"></i></a></span>
+                    <span class="social col"><a href="https://twitter.com/YTheWait"> <i
+                                class="fa fa-twitter"></i></a></span>
+                    <span class="social col"><a href="https://www.youtube.com/c/ythewait"><i class="fa fa-youtube-play"
+                                aria-hidden="true"></i></a></span>
+                    <span class="social col"><a href="https://www.instagram.com/ythewait/"><i
+                                class="fa fa-instagram"></i></a></span>
+                </div>
+
+
+
+                <div class=" mt-4 border-top border-dark">
+                    <p style="font-size: 10px;">
+                        By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy
+                        and
+                        Content Policies. All trademarks are properties of their respective owners. © 2020 - Y the
+                        Wait®.All
+                        rights reserved.
+                    </p>
+                </div>
+
+            </div>
+        </footer>
 
 
 </body>

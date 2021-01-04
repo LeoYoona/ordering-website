@@ -1,9 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-size:15px ;
+  font-size: 15px;
 }
-
 
 .catBtns {
   margin: 10px;
@@ -19,10 +18,12 @@
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-
+.typeH3-headings {
+  font-size: 18px !important;
+}
 
 .nav > li > a {
-		padding: 0px 15px  !important;
+  padding: 0px 15px !important;
 }
 .page_header_heading {
   position: absolute;
@@ -36,15 +37,18 @@
   padding-top: 4vw;
   font-weight: 800;
   text-transform: uppercase;
-  font-size:3em !important;
+  font-size: 3em !important;
 }
 .subheaderText {
- 
-  font-size:2em !important;
+  font-size: 2em !important;
 }
 
-.flag-icon{
+.flag-icon {
   font-size: 20px;
+}
+
+.input-icon img {
+  width: 14px !important;
 }
 
 .reviewImg {
@@ -164,7 +168,7 @@ a:hover {
   height: 1em;
   width: 1em;
   text-align: center;
-  font-size: 2em !important;
+
   border: 0;
   border-radius: 4px;
   display: inline-block;
@@ -176,10 +180,10 @@ a:hover {
 
 .minus,
 .plus {
-  height: 30px;
+  /* height: 30px; */
   background-color: #fff;
   border-radius: 4px;
-  padding: 8px 5px 8px 5px;
+  padding: 5px;
   border: none;
   display: inline-block;
   vertical-align: middle;
@@ -238,16 +242,16 @@ form.example::after {
   border: 0;
   box-shadow: 1px 1px 3px #ccc;
   margin: 15px;
-  font-size:12px !important ;
+  font-size: 12px !important ;
   /* padding-right: 15px ;
   padding-left:15px ; */
   /* t r b l */
 }
 
-.takeawayBtn{
-  box-shadow: 1px 4px 3px #ccc
+.takeawayBtn {
+  box-shadow: 1px 4px 3px #ccc;
 }
-.deliveryBtn{
+.deliveryBtn {
   box-shadow: 1px 1px 3px #ccc;
 }
 
@@ -283,11 +287,10 @@ form.example::after {
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab .tablinks {
+.tab .tablinks a {
   display: block;
   background-color: inherit;
   color: black;
-  padding: 0.5vw;
   width: 100%;
   border: none;
   outline: none;
@@ -319,6 +322,22 @@ form.example::after {
   width: 80%;
   border-left: none;
   height: 300px;
+}
+
+.poweredYTW {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+a:active {
+  background-color: #f30;
+}
+
+.poweredYTW img{
+  width: 100%;
+  height: auto;
 }
 
 .icons {
@@ -452,11 +471,12 @@ span {
 }
 
 .check_list .form-group label:before {
-  content:'';
+  content: "";
   -webkit-appearance: none;
   background-color: transparent;
   border: 2px solid #ddd;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 7px;
   display: inline-block;
   position: relative;
@@ -464,12 +484,12 @@ span {
   cursor: pointer;
   margin-right: 5px;
 }
-.check_list .form-group input:checked + label:before{
+.check_list .form-group input:checked + label:before {
   background-color: #f30;
-  border:2px solid #f30 !important;
+  border: 2px solid #f30 !important;
 }
 .check_list .form-group input:checked + label:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 1px;
@@ -479,25 +499,26 @@ span {
   border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-
 }
 /* END of check box styling css */
 .stars {
   color: #ff3300;
   font-size: 1.5vw;
 }
-.date{
-  color:#c2c2c2;
+.date {
+  color: #c2c2c2;
 }
 
 .d-flex {
-  display: -ms-flexbox!important;
-  display: flex!important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 .contact-map iframe {
   width: 100%;
   height: 400px;
 }
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
