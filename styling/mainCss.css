@@ -240,12 +240,7 @@ border-color: #4e555b;
   text-align: center;
 }
 
-.extraAmountBtn {
-  color: #fff !important;
-  background-color: #ff3300 !important;
-  border-radius: 2px !important;
-  height: 30px;
-}
+
 
 form.example input[type="text"] {
   padding: 10px;
@@ -317,6 +312,16 @@ form.example::after {
   box-shadow: 1px 1px 3px #ccc;
 }
 
+.extraAmountBtn {
+  /* color: #fff !important;
+  background-color: #ff3300 !important; */
+  border-radius: 2px !important;
+  height: 30px;
+  box-shadow: none;
+}
+.check-des{
+  line-height: 0;
+}
 /* Style the tab */
 .tab {
   float: left;

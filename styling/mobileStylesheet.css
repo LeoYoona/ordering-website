@@ -25,12 +25,12 @@
     width: fit-content;
   }
   .headerText {
-    padding-top: 20vw !important;
-    font-size:15px !important;
+    /* padding-top: 20vw !important; */
+    font-size:1.5em !important;
   }
   .subheaderText {
    
-    font-size:10px !important;
+    font-size:1em !important;
   }
 
   .reservationForm{
