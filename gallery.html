@@ -29,6 +29,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="styling/main.js"></script>
+
 <head>
     <title>Restaurant web page</title>
 </head>
@@ -45,7 +46,7 @@
                 background-image: url('img/header.jpg');
             }
         </style>
-       
+
     </div>
 
 
@@ -58,19 +59,19 @@
             }
         </style>
 
-        <nav class="navbar navbar-expand-lg navbar-light no-pad">
+        <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
 
             <div class="navbar-brand ytwNavimg-logo">
-                <img src="img/logoSmol.jpg">
+                <img class="pt-2" src="img/logoSmol.jpg">
             </div>
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-center pt-3" id="navbarNav">
                 <ul class="nav justify-content-center centered-nav">
                     <li class="nav-item">
                         <a class="nav-link " href="index.html">WHAT WE HAVE <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active activeLink">
-                        <a class="nav-link " href="gallery.html">GALLERY</a>
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reservation.html">RESERVATIONS</a>
@@ -95,6 +96,7 @@
                         <a class="dropdown-item  float-left w-100 pl-3"
                             href="http://localhost/ythewait/users/set_lang/1">
                             <i class="flag-icon flag-icon-gb"></i>
+
                             English </a>
                         <a class="dropdown-item bg-light float-left w-100 pl-3"
                             href="http://localhost/ythewait/users/set_lang/2">
@@ -108,7 +110,6 @@
                             href="http://localhost/ythewait/users/set_lang/4">
                             <i class="flag-icon flag-icon-de"></i>
                             German </a>
-
                     </div>
                 </li>
             </div>
@@ -116,11 +117,10 @@
 
 
             <div class="loginBtn ">
-                <button class="btns btn btn-light activeBtn woShadowBtns">Login/signup</button>
+                <button class="btns pr-4 pl-4 btn btn-light activeBtn woShadowBtns">Login/signup</button>
             </div>
             <div class="loginPfp ytwNavimg" style="display:none;">
-                <button style="border-color: #fff;" id="close-image"><img style="width:25px; height: 25px;"
-                        src="img/pfp.png"></button>
+                <img style="width:25px; height: 25px;" src="img/pfp.png">
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,108 +130,113 @@
 
 
         <div class="bgimg">
-            <div class="page_header_heading clr-org df-30 font-weight-bold">
-                <h1 class="headerText"><b>Gallery</b></h1>
+            <div class="page_header_heading ">
+                <div class="headerText text-center">Gallery</div>
             </div>
-        </div>
-        <!-- <h2 class="page_header_heading clr-org restaurant_address reto-nm-desk df-30">Gurme Restaurant</h2> -->
-        <!-- header end -->
-        <div class="container">
-            <div class="gallery-imgs">
-                <div class="row mx-auto align-items-center vcenter-item p-2">
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row mx-auto align-items-center vcenter-item p-2">
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row mx-auto align-items-center vcenter-item p-2">
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row mx-auto align-items-center vcenter-item p-2">
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img src="img/try.jpg" class="img-fluid">
-                    </div>
-                </div>
-            </div>
+
 
         </div>
+    </div>
 
-        <footer>
-            <div class="footerYtw pt-5 mt-5 w-100">
 
-                <div class="imgFooter mb-2">
-                    <img src="img/ytwFooter.png">
+    </div>
+    <!-- header end -->
+    <div class="container">
+        <div class="gallery-imgs">
+            <div class="row mx-auto align-items-center vcenter-item p-2">
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
                 </div>
-
-                <div>
-                    <span class="social col"><a href="https://www.facebook.com/ythewait/"><i
-                                class="fa fa-facebook-f"></i></a></span>
-                    <span class="social col"><a href="https://www.linkedin.com/company/ythewait/"><i
-                                class="fa fa-linkedin" aria-hidden="true"></i></a></span>
-                    <span class="social col"><a href="https://twitter.com/YTheWait"> <i
-                                class="fa fa-twitter"></i></a></span>
-                    <span class="social col"><a href="https://www.youtube.com/c/ythewait"><i class="fa fa-youtube-play"
-                                aria-hidden="true"></i></a></span>
-                    <span class="social col"><a href="https://www.instagram.com/ythewait/"><i
-                                class="fa fa-instagram"></i></a></span>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
                 </div>
-
-
-
-                <div class=" mt-4 border-top border-dark">
-                    <p style="font-size: 10px;">
-                        By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy
-                        and
-                        Content Policies. All trademarks are properties of their respective owners. © 2020 - Y the
-                        Wait®.All
-                        rights reserved.
-                    </p>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
                 </div>
-
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
             </div>
-        </footer>
+            <div class="row mx-auto align-items-center vcenter-item p-2">
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mx-auto align-items-center vcenter-item p-2">
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mx-auto align-items-center vcenter-item p-2">
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img src="img/try.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footerYtw pt-5 mt-5 w-100">
+
+            <div class="imgFooter mb-2">
+                <img src="img/ytwFooter.png">
+            </div>
+
+            <div>
+                <span class="social col"><a href="https://www.facebook.com/ythewait/"><i
+                            class="fa fa-facebook-f"></i></a></span>
+                <span class="social col"><a href="https://www.linkedin.com/company/ythewait/"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i></a></span>
+                <span class="social col"><a href="https://twitter.com/YTheWait"> <i
+                            class="fa fa-twitter"></i></a></span>
+                <span class="social col"><a href="https://www.youtube.com/c/ythewait"><i class="fa fa-youtube-play"
+                            aria-hidden="true"></i></a></span>
+                <span class="social col"><a href="https://www.instagram.com/ythewait/"><i
+                            class="fa fa-instagram"></i></a></span>
+            </div>
+
+
+
+            <div class=" mt-4 border-top border-dark">
+                <p style="font-size: 10px;">
+                    By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy
+                    and
+                    Content Policies. All trademarks are properties of their respective owners. © 2020 - Y the
+                    Wait®.All
+                    rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
