@@ -187,10 +187,12 @@ padding-left: 10px !important;
 .srch-restaurant .srch-nw {
   width: 100%;
   border: 1px solid #f5f5f5;
-  padding: 11px 10px 11px 50px !important;
+  padding: 11px 10px 11px 29px !important;
+   /* top right bottom left */
   color: #777;
   border-radius: 4px !important;
   margin: 1vw;
+  font-size: 13px !important;
 }
 .search {
   width: 100%;
@@ -242,7 +244,12 @@ padding-left: 10px !important;
   vertical-align: middle;
   text-align: center;
 }
-
+.poweredDiv{
+  padding-left: 5px !important;
+}
+.menu{
+  padding-right: 5px !important;
+}
 form.example input[type="text"] {
   padding: 10px;
   font-size: 17px;
@@ -516,8 +523,8 @@ span {
   -webkit-appearance: none;
   background-color: transparent;
   border: 2px solid #ddd;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05); */
   padding: 7px;
   display: inline-block;
   position: relative;
