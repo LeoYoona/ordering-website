@@ -108,34 +108,8 @@ a:hover {
   background-color: #fff !important;
   font-size: 14px !important;
 }
-.sort_wrapper {
-  position: absolute;
-  z-index: 20;
-  display: none;
-}
-.sort_wrapper {
-  right: 16px;
-  position: absolute;
-  z-index: 9;
-  display: none;
-  top: 40px;
-  border: 1px solid #ededed;
-  width: 77%;
-}
-.sort_wrapper ul li:first-child {
-  padding-top: 15px;
-}
-
-.sort_wrapper ul li {
-  padding: 5px 20px;
-  border-top: 0px solid #ededed;
-  background: #f4f4f4;
-}
-.sort_wrapper ul li {
-  padding: 5px 20px;
-  border-top: 1px solid #ededed;
-  background: #fff;
-  cursor: pointer;
+.dropdown {
+  padding-left: 0% !important;
 }
 .showMore {
   color: #ff3300;
@@ -288,6 +262,13 @@ form.example::after {
   clear: both;
   display: table;
 }
+
+.reservForm .form-control {
+  
+  font-size: 15px !important;
+
+}
+
 /* search bow ends */
 .margin0 {
   margin: 0;
