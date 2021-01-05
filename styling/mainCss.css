@@ -63,7 +63,7 @@
 }
 
 .input-icon img {
-  width: 14px !important;
+  width: 12px !important;
 }
 
 .reviewImg {
@@ -96,11 +96,10 @@ a:hover {
   color: #ff3300 !important;
 }
 
-/* {
-  color: #fff;
-background-color: #545b62;
-border-color: #4e555b;
-} */
+.middleMainMenu{
+  padding-right: 10px !important;
+padding-left: 10px !important;
+}
 .selctbtn {
   border: 1px solid #f4f4f4 !important;
   color: #777 !important;
