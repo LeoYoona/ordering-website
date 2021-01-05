@@ -110,6 +110,7 @@ a:hover {
 }
 .dropdown {
   padding-left: 0% !important;
+  list-style-type: none  !important;
 }
 .showMore {
   color: #ff3300;
