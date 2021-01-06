@@ -1,5 +1,5 @@
-/* mobileStylesheet.css */
-/* Use a media query to add a breakpoint at 800px: */
+
+/* Use a media query to add a breakpoint at 768px: */
 @media (max-width: 768px) {
     .loginPfp, .menuPhone {
       display: block !important;
@@ -10,7 +10,7 @@
     .loginBtn, .menuLarge,  .SearchBar i, .reserveImg img, .poweredYTW img, .btnHidden  {
       display: none !important;
     }
- 
+
     .ytwNavimg-logo img {
       width: 50%;
       height: auto;
@@ -19,11 +19,10 @@
       width: fit-content;
     }
     .headerText {
-      /* padding-top: 20vw !important; */
       font-size:1.5em !important;
     }
     .subheaderText {
-     
+
       font-size:1em !important;
     }
 
@@ -32,7 +31,6 @@
       height: auto;
     } */
 
-  
+
 
   }
-  
