@@ -12,7 +12,7 @@
     }
 
     .ytwNavimg-logo img {
-      width: 50%;
+      width: 100%;
       height: auto;
     }
     .navbar-brand{
@@ -25,11 +25,23 @@
 
       font-size:1em !important;
     }
-
-    /* .ytwNavimg img, .loginPfp img{
-      width: 8vw;
-      height: auto;
-    } */
+  
+.navbar {
+    padding-left: 10px  !important;
+    padding-right: 10px  !important;
+}
+.navbar-toggler.collapsed {
+	position: absolute;
+	right: 10px;
+	top: 20%;
+}  
+.navbar.navbar-expand-lg {
+    padding: 8px !important;
+    justify-content: flex-start;
+}
+.ytwNavimg-logo.col-xs-6 {
+    width: 50% !important;
+}
 
 
 

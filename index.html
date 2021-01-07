@@ -48,12 +48,18 @@
         </style>
 
         <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
-
-            <div class="navbar-brand ytwNavimg-logo">
+         <div class="row">
+            <div class="navbar-brand ytwNavimg-logo col-xs-6 col-sm-2">
                 <img class="pt-2" src="img/logoSmol.jpg">
             </div>
 
-            <div class="collapse navbar-collapse justify-content-center pt-3" id="navbarNav">
+            <button class="navbar-toggler col-xs-2 pull-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+
+            
+            <div class="collapse navbar-collapse justify-content-c pt-3 col-xs-10 col-sm-10" id="navbarNav">
                 <ul class="nav justify-content-center centered-nav">
                     <li class="nav-item active activeLink">
                         <a class="nav-link " href="index.html">WHAT WE HAVE <span class="sr-only">(current)</span></a>
@@ -71,45 +77,43 @@
                         <a class="nav-link" href="reviews.html">REVIEWS</a>
                     </li>
                 </ul>
+
+
+               <div class="justify-content-end d-flex align-items-center">
+                <div class="ytwNavimg">
+                    <li class="dropdown dropdown-language nav-item desk-language">
+                        <a class=" nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">
+                            <i class="flag-icon flag-icon-gb"></i><span class="selected-language"></span>
+                        </a>
+                        <div class="dropdown-menu flag-list" aria-labelledby="dropdown-flag">
+                            <a class="  float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/1">
+                                <i class="flag-icon flag-icon-gb"></i>
+    
+                                English </a>
+                            <a class=" bg-light float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/2">
+                                <i class="flag-icon flag-icon-nl"></i>
+                                Dutch </a>
+                            <a class="  float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/3">
+                                <i class="flag-icon flag-icon-fr"></i>
+                                French </a>
+                            <a class="  float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/4">
+                                <i class="flag-icon flag-icon-de"></i>
+                                German </a>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="loginBtn ">
+                    <button class="btns pr-4 pl-4 btn activeBtn woShadowBtns">Login/signup</button>
+                </div>
+                <div class="loginPfp ytwNavimg" style="display:none;">
+                    <img style="width:25px; height: 25px;" src="img/pfp.png">
+                </div>
+               
+               </div>
             </div>
-
-
-            <div class="ytwNavimg">
-                <li class="dropdown dropdown-language nav-item desk-language">
-                    <a class=" nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="true">
-                        <i class="flag-icon flag-icon-gb"></i><span class="selected-language"></span>
-                    </a>
-                    <div class="dropdown-menu flag-list" aria-labelledby="dropdown-flag">
-                        <a class="  float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/1">
-                            <i class="flag-icon flag-icon-gb"></i>
-
-                            English </a>
-                        <a class=" bg-light float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/2">
-                            <i class="flag-icon flag-icon-nl"></i>
-                            Dutch </a>
-                        <a class="  float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/3">
-                            <i class="flag-icon flag-icon-fr"></i>
-                            French </a>
-                        <a class="  float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/4">
-                            <i class="flag-icon flag-icon-de"></i>
-                            German </a>
-                    </div>
-                </li>
             </div>
-
-
-
-            <div class="loginBtn ">
-                <button class="btns pr-4 pl-4 btn activeBtn woShadowBtns">Login/signup</button>
-            </div>
-            <div class="loginPfp ytwNavimg" style="display:none;">
-                <img style="width:25px; height: 25px;" src="img/pfp.png">
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </nav>
 
 

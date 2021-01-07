@@ -177,7 +177,9 @@ a:hover {
   border-top-left-radius: 3px !important;
   border-bottom-left-radius: 3px !important;
 }
-
+.justify-content-c {
+	justify-content: space-between;
+}
 .number span {
   cursor: pointer;
 }
