@@ -110,7 +110,7 @@ a:hover {
 }
 .dropdown {
   padding-left: 0% !important;
-  list-style-type: none  !important;
+  list-style-type: none !important;
 }
 .showMore {
   color: #ff3300;
@@ -145,6 +145,9 @@ a:hover {
 .rest-top-bar .srch-restaurant {
   z-index: 000000 !important;
 }
+.pt-4.search.box-search.d-flex.srch-restaurant.srch-restornt-desk {
+  position: relative;
+}
 .input-icon {
   padding-bottom: 28px !important; /* top right bottom left */
   font-size: 10px !important ;
@@ -177,9 +180,7 @@ a:hover {
   border-top-left-radius: 3px !important;
   border-bottom-left-radius: 3px !important;
 }
-.justify-content-c {
-	justify-content: space-between;
-}
+
 .number span {
   cursor: pointer;
 }
@@ -195,6 +196,10 @@ a:hover {
   justify-content: center;
 }
 
+.btnRow{
+  display: flex;
+  align-items: center;
+}
 .check-des,
 .plusMinusAddbtn {
   color: #808080;
@@ -267,14 +272,15 @@ form.example::after {
 }
 
 .reservForm .form-control {
-  
   font-size: 15px !important;
-
 }
 
 /* search bow ends */
 .margin0 {
   margin: 0;
+}
+.float-right {
+  float: right;
 }
 .btns {
   color: #9e9d9d !important;
@@ -289,6 +295,10 @@ form.example::after {
   /* t r b l */
 }
 
+.menu-type-btns {
+  display: flex;
+  align-items: center;
+}
 .takeawayBtn {
   box-shadow: 1px 4px 3px #ccc;
   margin-right: 0;
@@ -314,16 +324,20 @@ form.example::after {
   border-radius: 2px !important;
   height: 30px;
   box-shadow: none;
+  color: #fff !important; 
 }
 .check-des {
-  line-height: 0;
+  line-height: 30px;
 }
 /* Style the tab */
-.tab {
+.menu .tab {
   float: left;
   background-color: #fff !important;
   width: 20%;
   height: 300px;
+}
+.menu a {
+  text-decoration: none;
 }
 
 /* Style the buttons that are used to open the tab content */

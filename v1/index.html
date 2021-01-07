@@ -3,7 +3,7 @@
 <html>
 <!--basic structure stylesheets -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/latest-bootstrap.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     type="text/css" media="all" />
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,15 +12,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="styling/mainCss.css">
-<link rel="stylesheet" href="styling/responsiveStylesheet.css">
-<!-- <link rel="stylesheet" href="styling/mobileStylesheet.css"> -->
+<link rel="stylesheet" href="styling/mobileStylesheet.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet"
     href="https://www.ythewait.com/order/assets/admin/app-assets/fonts/flag-icon-css/css/flag-icon.min.css?_=1602860794">
 <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-<!-- Bootstrap CSS file -->
-
 <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
 <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
@@ -48,18 +45,20 @@
         </style>
 
         <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
-         <div class="row">
-            <div class="navbar-brand ytwNavimg-logo col-xs-6 col-sm-2">
+
+            <div class="navbar-brand ytwNavimg-logo">
                 <img class="pt-2" src="img/logoSmol.jpg">
             </div>
 
-            <button class="navbar-toggler col-xs-2 pull-right" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-           </button>
 
-            
-            <div class="collapse navbar-collapse justify-content-c pt-3 col-xs-10 col-sm-10" id="navbarNav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse justify-content-center pt-3" id="navbarNav">
                 <ul class="nav justify-content-center centered-nav">
                     <li class="nav-item active activeLink">
                         <a class="nav-link " href="index.html">WHAT WE HAVE <span class="sr-only">(current)</span></a>
@@ -78,8 +77,6 @@
                     </li>
                 </ul>
 
-
-               <div class="justify-content-end d-flex align-items-center">
                 <div class="ytwNavimg">
                     <li class="dropdown dropdown-language nav-item desk-language">
                         <a class=" nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
@@ -89,9 +86,10 @@
                         <div class="dropdown-menu flag-list" aria-labelledby="dropdown-flag">
                             <a class="  float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/1">
                                 <i class="flag-icon flag-icon-gb"></i>
-    
+
                                 English </a>
-                            <a class=" bg-light float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/2">
+                            <a class=" bg-light float-left w-100 pl-3"
+                                href="http://localhost/ythewait/users/set_lang/2">
                                 <i class="flag-icon flag-icon-nl"></i>
                                 Dutch </a>
                             <a class="  float-left w-100 pl-3" href="http://localhost/ythewait/users/set_lang/3">
@@ -104,16 +102,20 @@
                     </li>
                 </div>
 
+
+
                 <div class="loginBtn ">
                     <button class="btns pr-4 pl-4 btn activeBtn woShadowBtns">Login/signup</button>
                 </div>
+
                 <div class="loginPfp ytwNavimg" style="display:none;">
                     <img style="width:25px; height: 25px;" src="img/pfp.png">
                 </div>
-               
-               </div>
             </div>
-            </div>
+
+
+
+
         </nav>
 
 
@@ -149,54 +151,48 @@
         <!-- apply here position absolute ab then place this search inside the input type text -->
         <div class="container p-2">
             <div class="row">
-                <!-- <div class="col-sm-6 col-xs-12">
-                   
-                    <div class="search box-search  srch-restaurant srch-restornt-desk">
-                        <div class="input-icon  ">
-                            <img alt="" src="https://www.ythewait.com/order/assets/images/frontend/srch-1.svg">
+                <div class="row btnRow">
+                    <div class="col-sm-7">
+                        <div class="pt-4 search box-search d-flex srch-restaurant srch-restornt-desk">
+                            <div class="input-icon">
+                                <img alt="" src="https://www.ythewait.com/order/assets/images/frontend/srch-1.svg">
+                            </div>
+                            <input class="search srch-nw search_restaurants df-14" type="text"
+                                placeholder="Bijv. Restaurant name" name="search_text" autocomplete="off">
                         </div>
-                        <input class="search srch-nw search_restaurants df-14" type="text"
-                            placeholder="Bijv. Seacrh query" name="search_text" autocomplete="off">
                     </div>
-                </div> -->
-                <div class="col-sm-7">
-                    <div class="pt-4 search box-search d-flex srch-restaurant srch-restornt-desk">
-                        <div class="input-icon">
-                            <img alt="" src="https://www.ythewait.com/order/assets/images/frontend/srch-1.svg">
-                        </div>    
-                        <input class="search srch-nw search_restaurants df-14" type="text" placeholder="Bijv. Restaurant name" name="search_text" autocomplete="off">
+
+                    <div class="deliveryTakeaway col-sm-3 col-xs-6 " style="text-align: right;">
+                        <span>
+                            <button class="btns pr-3 pl-3 btn btn-light takeawayBtn "> <i
+                                    class="las la-shopping-bag"></i>Takeaway</button>
+
+                            <button class="btns pr-3 pl-3 btn activeBtn deliveryBtn"><i class="las la-motorcycle"></i>
+                                Delivery</button>
+                        </span>
                     </div>
-                </div>
-
-                <div class="deliveryTakeaway col-sm-3 col-xs-6 " style="text-align: right;">
-                    <span>
-                        <button class="btns pr-3 pl-3 btn btn-light takeawayBtn "> <i
-                                class="las la-shopping-bag"></i>Takeaway</button>
-
-                        <button class="btns pr-3 pl-3 btn activeBtn deliveryBtn"><i class="las la-motorcycle"></i>
-                            Delivery</button>
-                    </span>
-                </div>
-                <div class="col-sm-2 col-xs-2 pt-4 dropdownMenu row">
-                    <div class="col-sm-4 pt-2  sort">Sort</div>
-                    <div class=" col-sm-8 dropdown show">
-                        <a class="pl-4 pr-4 selctbtn btn btn-primary" href="#" role="button" id="dropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            select <i class="pl-5 fa fa-angle-down" aria-hidden="true"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Breakfast</a>
-                            <a class="dropdown-item" href="#">Lunch</a>
-                            <a class="dropdown-item" href="#">Dinner</a>
+                    <div class="col-sm-2 col-xs-2 pt-4 dropdownMenu row">
+                        <div class="col-sm-4 pt-2  sort">Sort</div>
+                        <div class=" col-sm-8 dropdown show">
+                            <a class="pl-4 pr-4 selctbtn btn btn-primary" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                select <i class="pl-5 fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Breakfast</a>
+                                <a class="dropdown-item" href="#">Lunch</a>
+                                <a class="dropdown-item" href="#">Dinner</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
                 <div class="menu-cont container mt-5">
                     <div class="row">
                         <div class="menu col-sm-2 col-xs-12 tab">
                             <div class="pb-4 ">
-                                <h3 class="semi-bold-headings">MENU</h3>
+                                <h4 class="semi-bold-headings">MENU</h4>
                             </div>
 
 
@@ -246,18 +242,18 @@
 
                         <DIV class='middleMainMenu col-sm-7'>
                             <div class="pb-2">
-                                <h3 class="semi-bold-headings">CATERGORY NAME</h3>
+                                <h4 class="semi-bold-headings">CATERGORY NAME</h4>
                             </div>
 
 
                             <div id="Breakfast" class="p-4 categories-lists">
                                 <div class="menuItems pb-4">
-                                    <h3 class="semi-bold-headings">Breakfast Food Items start here <span
+                                    <h4 class="semi-bold-headings">Breakfast Food Items start here <span
                                             class="float-right"> <span class="pr-4">€10</span>
                                             <button class="addBtn "><button class="addBtn"><img
                                                         src="img/addBtn.png"></button>
                                         </span>
-                                    </h3>
+                                    </h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/cs.png">
                                     <div class="
@@ -292,7 +288,7 @@
                                             </div>
                                             <div class="col-sm-2">
                                                 <button class="activeBtn extraAmountBtn btn btn-light pl-4 pr-4 pt-2">
-                                                    <h5 class="semi-bold-headings ">Add $27.50</h5>
+                                                    <p class="semi-bold-headings ">Add $27.50</p>
                                                 </button>
                                             </div>
                                         </div>
@@ -301,35 +297,35 @@
                                 </div>
 
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/hot.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/hot.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/cs.png">
                                 </div>
@@ -338,42 +334,42 @@
 
                             <div id="Lunch" class="p-4">
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Lunch Food Items start here <span
+                                    <h4 class="semi-bold-headings">Lunch Food Items start here <span
                                             class="float-right"><span class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span> </h3>
+                                                    src="img/addBtn.png"></button> </span> </h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/cs.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/hot.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/hot.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/cs.png">
                                 </div>
@@ -381,43 +377,43 @@
 
                             <div id="Dinner" class="p-4">
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Dinner Food Items start here <span
+                                    <h4 class="semi-bold-headings">Dinner Food Items start here <span
                                             class="float-right"><span class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
-                                    </h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
+                                    </h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/cs.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/hot.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/hot.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/cs.png">
                                 </div>
@@ -426,43 +422,43 @@
 
                             <div id="Drinks" class="p-4">
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Drink Items start here <span
+                                    <h4 class="semi-bold-headings">Drink Items start here <span
                                             class="float-right"><span class="pr-4">€10</span><button class="addBtn"><img
                                                     src="img/addBtn.png"></button> </span>
-                                    </h3>
+                                    </h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/cs.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/hot.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/hot.png">
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                 </div>
                                 <div class="menuItems">
-                                    <h3 class="semi-bold-headings">Food Item<span class="float-right"><span
+                                    <h4 class="semi-bold-headings">Food Item<span class="float-right"><span
                                                 class="pr-4">€10</span><button class="addBtn"><img
-                                                    src="img/addBtn.png"></button> </span></h3>
+                                                    src="img/addBtn.png"></button> </span></h4>
                                     <p>Item decription</p>
                                     <img class="itemClassification" src="img/cs.png">
                                 </div>
@@ -477,6 +473,7 @@
                     </div>
                 </div>
             </div>
+
             <footer>
                 <div class="footerYtw pt-5 mt-5 w-100">
 
