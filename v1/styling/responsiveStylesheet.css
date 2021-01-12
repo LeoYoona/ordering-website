@@ -1,13 +1,13 @@
 
 /* Use a media query to add a breakpoint at 768px: */
 @media (max-width: 768px) {
-    .loginPfp, .menuPhone {
+    .MobileFlagLogin, .menuPhone , .flagMobile, .loginPfp{
       display: block !important;
       border: 0;
       background: none;
       box-shadow: none;
     }
-    .loginBtn, .menuLarge,  .SearchBar i, .reserveImg img, .poweredYTW img, .btnHidden  {
+    .loginBtn,.flagNormal, .menuLarge,  .SearchBar i, .reserveImg img, .poweredYTW img, .btnHidden  {
       display: none !important;
     }
 
@@ -31,6 +31,15 @@
     padding-right: 10px  !important;
 }
 
+/* Container holding the image and the text */
+.bgimg {
+  height: 40vw !important;
+  width: 100%;
+  position: relative;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 
 

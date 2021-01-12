@@ -339,7 +339,9 @@ form.example::after {
 .menu a {
   text-decoration: none;
 }
-
+.price{
+  padding-right:2rem;
+}
 /* Style the buttons that are used to open the tab content */
 .tab .tablinks a {
   display: block;
